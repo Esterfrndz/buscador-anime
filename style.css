@@ -123,6 +123,16 @@ input[type='text'] {
   margin-bottom: 10px; /* Adds space for smaller screens */
 }
 
+#searchForm button{
+    width: 30px;
+    height: 56px;
+    background-color: #c6c4cf;
+}
+
+#query{
+    padding: 20px;
+}
+
 button {
   padding: 10px 20px;
   border: none;
