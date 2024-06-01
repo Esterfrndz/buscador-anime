@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'carousel', // tipo de slider (carousel, slider, etc.)
     perView: 3, // número de slides por vista
     focusAt: 'center', // enfoque en el centro
-    autoplay: 1800, // auto-reproducción cada 3000ms
+    autoplay: 2000, // auto-reproducción cada 3000ms
     animationDuration: 800, // duración de la animación
     animationTimingFunc: 'ease-in-out', // tipo de animación
   }).mount();
