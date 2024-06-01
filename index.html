@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍥 Buscador de Animes 🍥</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="./images/logo.png" alt="" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">En directo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Anime TV</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="./images/banner5.png" alt="" />
+          </li>
+          <li class="glide__slide">
+            <img src="./images/banner4.png" alt="" />
+          </li>
+          <li class="glide__slide">
+            <img src="./images/banner6.png" alt="" />
+          </li>
+          <li class="glide__slide">
+            <img src="./images/banner2.png" alt="" />
+          </li>
+          <li class="glide__slide">
+            <img src="./images/banner3.png" alt="" />
+          </li>
+          <li class="glide__slide">
+            <img src="./images/banner1.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="searchForm">
+        <input type="text" id="query" placeholder="Busca un anime" required />
+
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Resultados del buscador -->
+
+      <div id="results"></div>
+    </div>
+
+    <!-- Ranking -->
+
+    <div class="ranking-slider-container">
+      <div class="ranking">
+        <h2>Ranking de Animes</h2>
+        <table id="rankingTable">
+          <thead>
+            <tr>
+              <th>Ranking</th>
+              <th>Imagen</th>
+              <th>Título</th>
+              <th>Puntuación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Contenido generado dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cards -->
+
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="./images/card1.jpg" alt="Movie 1" />
+          <h3>Naruto</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card2.jpeg" alt="Movie 2" />
+          <h3>One Piece</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card3.jpg" alt="Movie 3" />
+          <h3>Doraemon</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card4.jpg" alt="Movie 4" />
+          <h3>ShinChan</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card5.jpeg" alt="Movie 5" />
+          <h3>Inazuma Eleven</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card6.jpeg" alt="Movie 6" />
+          <h3>Arcane</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card7.jpeg" alt="Movie 7" />
+          <h3>Avatar</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card8.jpeg" alt="Movie 8" />
+          <h3>Detective Conan</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card9.jpeg" alt="Movie 9" />
+          <h3>Yu Gi Oh</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card10.jpeg" alt="Movie 10" />
+          <h3>Dragon Ball Z</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card11.jpg" alt="Movie 11" />
+          <h3>HaikYu!!</h3>
+          <button>Ver detalles</button>
+        </div>
+        <div class="movie-card">
+          <img src="./images/card12.jpeg" alt="Movie 12" />
+          <h3>JoJo's</h3>
+          <button>Ver detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Somos una empresa dedicada a ofrecer los mejores servicios a
+            nuestros clientes. Nuestra misión es proporcionar excelencia en cada
+            proyecto.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Enlaces Útiles</h2>
+          <ul>
+            <li><a href="#">En directo</a></li>
+            <li><a href="#">Anime TV</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contacto</h2>
+          <p>Email: animetv@ejemplo.com</p>
+          <p>Teléfono: +123 456 7890</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Síguenos</h2>
+          <div class="social-iconos">
+            <ul>
+              <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+              <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+              <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+              <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Anime TV. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  </body>
+</html>
